@@ -1,0 +1,25 @@
+version: '3.3'
+
+services:
+  front:
+    build:
+      context: Front
+    ports:
+      - "8000:8000"
+    depends_on:
+      - back 
+
+  back:
+    build:
+      context: Back
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongodb 
+
+  mongodb:
+      image: mongo
+      environment:
+        - MONGO_INITDB_ROOT_USERNAME=root
+        - MONGO_INITDB_ROOT_PASSWORD=password
+        - MONGO_INITDB_DATABASE=data_engineering

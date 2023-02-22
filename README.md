@@ -34,7 +34,7 @@ Nous récupérons les données grâce à l'API
 - https://opendata.paris.fr/explore/dataset/les-arbres-plantes/table/?location=11,48.83375,2.34318&basemap=jawg.streets
 Nous récupérons les données grâce à l'API
 
-- lien de là ou il a pris ses données le boug 
+- https://www.iqair.com/fr/france/ile-de-france/paris 
 Nous récupérons les données en scrappant la page
 
 ### Les paquets à utiliser

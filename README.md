@@ -6,9 +6,8 @@ Beaucoup de villes sont de plus en plus bétonnées et laissent moins de place �
 C'est pourquoi il est important de planter des arbres pour rendre les villes plus vertes.
 Le feuillage des arbres est recouvert de pores qui captent les particules fines dont le dioxyde de carbone et le dioxyde d’azote (NO2) contenus dans l’air. Ils les emprisonnent et rejettent de l’oxygène: c’est le processus de photosynthèse. 
 
-Notre association (fictive...) se bat pour une campagne de plantation d'arbreq et de végétalisation de Paris plus active !
 
-Quelques statistiques pourront vous convaincre de nous suivre...
+Quelques statistiques pourront peut-être vous éclairer sur le sujet.
 
 
 Problématique: Comment à évolué la quantité de NO2 dans l'air de Paris au cours des dernières années ? Y a t-il un lien avec la quantité de nouveaux arbres plantés ?
@@ -23,8 +22,9 @@ Ensuite, il faut cloner le repository dans le dossier local souhaité en utilisa
 
 Le code s'organise en plusieurs conteneurs, permettant de gérer des fonctionnalités différentes. Il vous faudra donc verifier que vous avez bien installé Docker.
 
-Une fois notre repository cloné sur votre machine, il faudra executer la commander `docker compose up -d` à la recine du projet.
+Une fois notre repository cloné sur votre machine, il faudra executer la commander `docker compose up -d` à la racine du projet.
 
+Pour voir le dashboard, il faut aller sur votre navigateur et mettre `http://localhost:8000/` (ça mettra un peu de temps à charger)
 ### Le dataset à utiliser
 
 Pour pouvoir répondre à la problématique, nous utilisons :
@@ -62,6 +62,8 @@ La base de donnée MongoDB nous servira à stocker les données.
 
 Le front sert à former les graphiques et afficher le dashboard :
 - former le dashboard : `dashboard.py`
+- scrapper des données en temps réel sur la qualité de l'air : `scrap_iqair.py`
+- récupperer des données sur la plantation d'arbres dans Paris : `tree_api.py`
 - les requirements pour ce container : `requirements.txt`
 - le Dockerfile de ce conteneur : `Dockerfile`
 
@@ -81,5 +83,7 @@ La configuration permettant d'initialiser et de lancer le projet est stockée da
 
 ## Rapport d'analyse
 On peut voir qu'en moyenne, la station la plus poluée est la station du périférique Est, ce qui semble assez logique étant donné la circulation importante et les embouteillages sur cet axe de circulation.
+La plantation d'arbres semble influer sur a qualité de l'air, cependant, il y a de nombreux paramètres a prendre en compte, et il est difficile de déterminer une corrélation entre la plantation d'arbres et la qualité de l'air à Paris.
+Dans tous les cas, il est bénéfique de végétaliser la capitale.
 
 

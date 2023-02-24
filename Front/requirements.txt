@@ -3,3 +3,6 @@ dash
 plotly_express
 requests
 numpy
+folium
+bs4
+lxml

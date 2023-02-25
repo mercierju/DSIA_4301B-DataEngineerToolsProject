@@ -191,9 +191,9 @@ app.layout = html.Div([
     
     html.H1("Qualité de l'air à Paris", style={'textAlign': 'center', 'fontSize': 60}),
 
-    html.P("Beaucoup de villes sont de plus en plus bétonnées et laissent moins de place à la végétation et aux arbres, et Paris ne fait pas exception à la règle. De plus, la qualité de l'air dans Paris est en permanente dégradation, et des épisodes de pollution sont plus fréquents au fil du temps. Il est donc important de planter des arbres pour rendre les villes plus vertes. Le feuillage des arbres est recouvert de pores qui captent les particules fines dont le dioxyde de carbone et le dioxyde d’azote (NO2) contenus dans l’air. Ils les emprisonnent et rejettent de l’oxygène: c’est le processus de photosynthèse. "),
+    html.P("Beaucoup de villes sont de plus en plus bétonnées et laissent moins de place à la végétation et aux arbres, et Paris ne fait pas exception à la règle. De plus, la qualité de l'air dans la capitale est en permanente dégradation, et des épisodes de pollution sont plus fréquents au fil du temps. C'est pourquoi il est important de planter des arbres pour rendre les villes plus vertes. Le feuillage des arbres est recouvert de pores qui captent les particules fines dont le dioxyde de carbone et le dioxyde d’azote (NO2) contenus dans l’air. Ils les emprisonnent et rejettent de l’oxygène: c’est le processus de photosynthèse."),
 
-    html.P("Mais la campagne de plantation des arbres mise en place depuis ces dernières années à eu un réel impcat ?"),
+    html.P("Mais la campagne de plantation des arbres mise en place depuis ces dernières années e-t-elle eu un réel impact ?"),
     
 
     #Valeurs en temps réel
@@ -210,7 +210,7 @@ app.layout = html.Div([
         data=other_poll_table.to_dict('records'),
     ),
 
-    html.P("Ici, vous pouvez voir en temps réel la qualité de l'air dans Paris"),
+    html.P("Ici, vous pouvez voir en temps réel la qualité de l'air dans Paris."),
     
     #Bar
     html.H2("Qualité moyenne de l'air depuis 2020"),
@@ -218,7 +218,7 @@ app.layout = html.Div([
         id='bar',
         figure = bar_chart
     ), 
-     html.P("La station de prélèvement qui mesure une qualité de l'aire la plus mauvaise en moyenne est la station sur le périphérique Est, pas tès étonnant aux vues de la circulation quotidienne sur cet axe routier."),
+     html.P("La station de prélèvement qui mesure une qualité de l'air la plus mauvaise en moyenne est la station située proche du périphérique Est, ce qui n'est pas tès étonnant aux vues de la circulation quotidienne sur cet axe routier."),
 
     #Map
     html.H2('Emplacement des arbres plantés selon leur type et position des stations de relevé'),
@@ -236,7 +236,7 @@ app.layout = html.Div([
         value = 'Global',
     ),  
     html.Iframe(id = 'Map', srcDoc = open('Global.html', 'r').read(), width = '100%', height = '600'),
-    html.P("Vous pouvez voir sur la carte tous les arbres plantés dans Paris, ainsi que choisir parmis différentes essences à visualiser. Les stations de prélèvements sont localisées en rouge sur la carte."),
+    html.P("Vous pouvez voir sur la carte tous les arbres plantés dans Paris, et vous pouvez choisir parmis différentes essences d'arbre à visualiser. Les stations de prélèvements sont localisées en rouge sur la carte."),
 
      #Graphiques
     html.H2("Valeur moyenne de polluant par mois et nombre d'arbres plantés au même moment à proximité de la station sélectionnée"),
@@ -263,9 +263,9 @@ app.layout = html.Div([
     ),
     html.P("Vous pouvez vois l'évolution de NO2 dans l'air ainsi que les arbres plantés autour d'une station dans le temps pour visualiser l'impact potentiel de ceux-ci."),
 
-    html.P("On peut voir que suite à un grand nombre d'arbres planté, la quantité de N02 mesuré baisse. C'est visible notemment à la station Lenglen. On peut en déduire que la plantation d'arbes est bénéfique pour la qualité de l'air."),
+    html.P("On peut voir que suite à un grand nombre d'arbres plantés, la quantité de NO2 mesuré baisse. C'est visible notamment à la station Lenglen. On peut en déduire que la plantation d'arbes est bénéfique pour la qualité de l'air."),
 
-    html.P("Pour conclure, on a pu voir que la plantation d'arbe peut avoir un impact sur la qualité de l'air. Cependant, c'est difficila à prouver avec les donnéesq ue nous avons car il y a beaucoup de paramètres à prendre en compte comme par exemple la température, le vent, et d'autres auxquels nous ne pensons même pas. Dans tous les cas, il est bénéffique de planter plus d'arbres et de végétaliser Paris.")
+    html.P("Pour conclure, on a pu voir que la plantation d'arbes peut avoir un impact sur la qualité de l'air. Cependant, c'est difficila à prouver avec les données que nous avons car il y a beaucoup de paramètres à prendre en compte comme par exemple la température, le vent, et d'autres auxquels nous ne pensons même pas. Dans tous les cas, il est bénéfique de planter plus d'arbres et de végétaliser Paris.")
     
 ],style={'font-family':'Trebuchet MS, sans-serif','marginTop':'35px', 'width':'90%', 'margin': 'auto'})
 

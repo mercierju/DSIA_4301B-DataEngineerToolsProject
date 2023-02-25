@@ -52,7 +52,6 @@ Le projet est divisé en 3 composants principaux :
 - le back qui permet la gestion d'une base de données. Pour ça il faut récupérer  les données, les convertir en format json, les push dans la base de donnée, initialiser celle-ci, actualiser les données si nécessaire, faire le lien avec le front pour lui transmettre les données.
 
 
-
 Mais concrètement, comment ça marche ?
 
 Lorsque nous exécutons notre application pour la première fois, nous récupérons les données liées à la pollution de l'air via une API. Nous convertissons ces données en JSON afin de les mettre dans la base de données sous une forme plus structurée qu'un simple dataframe. Nous avons décidé de regrouper les mesures par stations qui sont au nombre de 4. Nous faisons ces opérations dans le back.

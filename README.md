@@ -22,11 +22,12 @@ Ensuite, il faut cloner le repository dans le dossier local souhaité en utilisa
 
 Le code s'organise en plusieurs conteneurs, permettant de gérer des fonctionnalités différentes. Il vous faudra donc vérifier que vous avez bien installé Docker.
 
-Une fois notre repository cloné sur votre machine, il faudra exécuter la commande `docker compose up -d` à la racine du projet. Cela va construire les conteneurs nécessaires au fonctionnement de l'application ainsi que les démarrer.
+Une fois le repository cloné sur votre machine, il faudra exécuter la commande `docker compose up -d` à la racine du projet. Cela va construire les conteneurs nécessaires au fonctionnement de l'application ainsi que les démarrer s'ils n'ont pas déjà été créés auparavant. 
+Pour démarrer les conteneurs s'ils ont déjà été créés, il faudra exécuter la même commande.
 
 Pour voir le dashboard, il faut aller sur votre navigateur et mettre `http://localhost:8000/`. (ça mettra un peu de temps à charger, environ une minute)
 
-Si les conteneurs ont déjà été créés auparavant, pour les démarrer
+
 ### Les données utilisées
 
 Pour pouvoir répondre à la problématique, nous utilisons :
